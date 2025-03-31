@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      width: 100%;
+      max-width: 1400px;
+      text-align: center;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const container = document.createElement('div');
+      container.className = 'container';
+
+      const leftSidebar = document.createElement('div');
+      leftSidebar.className = 'left-sidebar';
+      leftSidebar.innerHTML = `
+        `;
+
+      const rightSidebar = document.createElement('div');
+      rightSidebar.className = 'right-sidebar';
+      rightSidebar.innerHTML = `
+
+        `;
+
+      const bodyContent = document.body.innerHTML;
+      document.body.innerHTML = '';
+      container.appendChild(leftSidebar);
+
+      const contentWrapper = document.createElement('div');
+      contentWrapper.className = 'content-wrapper';
+      contentWrapper.innerHTML = bodyContent;
+      container.appendChild(contentWrapper);
+
+      container.appendChild(rightSidebar);
+      document.body.appendChild(container);
+    });
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/styly.css">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>home</title>
+</head>
+
+<body>
+
+  <div class="w3-container w3-center">
+    <h1>𝖋𝖔𝖚𝖗 𝖒𝖔𝖓𝖙𝖍 𝖆𝖓𝖓𝖎𝖛𝖊𝖗𝖘𝖆𝖗𝖞</h1>
+    <div class="w3-panel w3-pale-red cat">
+      <p>
+        Surprise! Happy 4-month anniversary! I love you so much and while studying and grinding League of Legends, I
+ wanted to work on this gift project, just for you! So I hope you will enjoy it because coding this right now
+ makes me really impatient. But I hope it's worth it. It's simple, but that doesn't mean it didn't take me hours!
+      </p>
+    </div>
+
+    <nav class="">
+      <a class="button button3" href="1.html">Information</a>
+      <a class="button button3" href="2.html">Reasons</a>
+      <a class="button button3" href="3.html">Love</a>
+      <a class="button button3" href="4.html">Plans</a>
+      <a class="button button3" href="5.html">Appreciation</a>
+      <a class="button button3" href="6.html">Message</a>
+    </nav>
+
+    <div class="w3-container ">
+      <h2 title="Themes">𝕿𝖍𝖊𝖒𝖊𝖘</h2>
+      So here are the themes I've prepared for you and more surprises, just make sure to check everything and don't
+      leave anything behind, okay? I put a lot of time and effort into this, plus watching a few videos to help me out.
+<p style="color: #5808089f;">note: you have to click the underlined words.. or use the button!</p>
+      <div class="k w3-panel w3-border cat w3-border-red w3-hover-pale-red">
+        <h3><a title="Reasons" href="2.html">Reasons</a>: What could this be? Hmm, who knows</h3>
+        <p>Many explanations to our arguments and many more, what more can you ask for? Just kidding, don't take me so
+          seriously, I just want you to understand my perspective and the way I think</p>
+      </div>
+      <div class="k w3-panel w3-border cat w3-border-red w3-hover-pale-red">
+        <h3><a title="Love" href="3.html">Love</a>: Here, I want to express my love for you</h3>
+        <p>I love you too much, so my heart is full of you, I want to write it down for you, so you can look back at it
+          anytime and anywhere! What wouldn't I do for you, hmm?</p>
+      </div>
+      <div class="k w3-panel w3-border cat w3-border-red w3-hover-pale-red">
+        <h3><a title="Plans" href="4.html">Plans</a>: Some plans I've made for us</h3>
+        <p>There will be a calender and our wedding day... I'm just joking (again?). There will be a list of plans and what I'd like to finish because I want to grow with you and pursue my passion with you!</p>
+      </div>
+      <div class="k w3-panel w3-border cat w3-border-red w3-hover-pale-red">
+        <h3><a title="Appreciation" href="5.html">Appreciation</a>: Bunch of texts to show my gratitude</h3>
+        <p>Another one, because I need to tell you, how, much, I, fucking, love, you, you fucking imbecile. Don't take
+          my love for granted! I spend too much time doing this and I don't want this to go to waste.. or if you want to
+          make me sad.. then ok</p>
+      </div>
+      <div class="k w3-panel w3-border cat w3-border-red w3-hover-pale-red">
+        <h3><a title="Message" href="6.html">Message</a>: This is a message just for you!</h3>
+        <p>I've been planning to make this, but coding is so hard, but whatever, I tried my best for you, so I hope you
+          like it! If not.. I will try to better my code next time, so I don't disappoint you.</p>
+      </div>
+      <div class="shake2"
+      <p>You complete me. You make me feel like life is actually worth living, without you I would
+        be
+        completely lost. I love you so much, I would die for you....</p>
+      </div>
+      <div class="pata w3-container w3-center">
+        <p>
+
+          2025 | @lin.echi | For Lukas
+        </p>
+      </div>
+      <script>
+        function createHeart() {
+          const heart = document.createElement('div');
+          heart.classList.add('heart');
+
+          const container = document.createElement('div');
+          container.classList.add('heart-container');
+
+          const size = Math.random() * 30 + 30;
+          const delay = Math.random() * 2;
+          const animationDuration = Math.random() * 5 + 7;
+
+          heart.style.width = `${size}px`;
+          heart.style.height = `${size}px`;
+
+          container.style.left = '-30px';
+          container.style.top = `${Math.random() * window.innerHeight}px`;
+
+          container.style.animationDuration = `${animationDuration}s`;
+          container.style.animationDelay = `${delay}s`;
+
+          container.appendChild(heart);
+          document.body.appendChild(container);
+
+          setTimeout(() => {
+            document.body.removeChild(container);
+          }, (animationDuration + delay) * 1000);
+        }
+
+        function generateHearts() {
+          createHeart();
+          setTimeout(generateHearts, Math.random() * 500 + 200);
+        }
+
+        generateHearts();
+      </script>
+</body>
+
+</html>

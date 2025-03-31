@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      width: 100%;
+      max-width: 1400px;
+      text-align: center;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* --------------------------*/
+    .heart1 {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            animation: pulse 1s ease infinite;
+        }
+        .heart1::before,
+        .heart1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 52px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background: pink;
+        }
+        .heart1::before {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart1::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const container = document.createElement('div');
+      container.className = 'container';
+
+      const leftSidebar = document.createElement('div');
+      leftSidebar.className = 'left-sidebar';
+      leftSidebar.innerHTML = `
+        `;
+
+      const rightSidebar = document.createElement('div');
+      rightSidebar.className = 'right-sidebar';
+      rightSidebar.innerHTML = `
+
+        `;
+
+      const bodyContent = document.body.innerHTML;
+      document.body.innerHTML = '';
+      container.appendChild(leftSidebar);
+
+      const contentWrapper = document.createElement('div');
+      contentWrapper.className = 'content-wrapper';
+      contentWrapper.innerHTML = bodyContent;
+      container.appendChild(contentWrapper);
+
+      container.appendChild(rightSidebar);
+      document.body.appendChild(container);
+    });
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/styly.css">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>love</title>
+</head>
+
+<div class="w3-container  w3-center">
+  <h1>𝖑𝖔𝖛𝖊 𝖘𝖙𝖔𝖗𝖞</h1>
+  <div class="w3-panel w3-pale-red cat">
+    <p>Oh, my favourite part! I just want to shower you with attention and affection, because I am truly obsessed and in
+      love with you, when will you marry me already? I can't wait to call you my fiance, I'm a little nervous writing
+      this haha, but I want to be with you forever</p>
+  </div>
+
+  <body>
+    <nav class="">
+      <a class="button button3" href="1.html">Information</a>
+      <a class="button button3" href="2.html">Reasons</a>
+      <a class="button button3" href="3.html">Love</a>
+      <a class="button button3" href="4.html">Plans</a>
+      <a class="button button3" href="5.html">Appreciation</a>
+      <a class="button button3" href="6.html">Message</a>
+    </nav>
+
+    <div id="n" class="w3-container w3 w3-margin-bottom">
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="k">
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 I</h3>
+        <p>When I heard about you, I knew I just wanted to be with you, for some reason you reminded me of myself. When
+          we first met, the way you greeted me felt so nice, your hug was so addicting and although in the beginning I
+          was shy, I still craved your hugs and cuddles. The second day when I woke up and realized what happened, I was
+          quite embarrassed and a little nervous next to you, but soon I got comfortable enough to tell you about my
+          problems. When we were in Berlin, I really enjoyed it, I wasn't with my family and you took care of
+          everything. I still think about it now and then.</p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 II</h3>
+        <p>After Berlin we both knew what happened, it was unfortunate, but we figured it out. I was so scared I would
+          lose you (to be honest, in the moment I wouldn't mind so much, but if I did lose you, I would never know how
+          of a good
+          person you are.). It makes me flattered that you trust me even after that. What are the chances that a
+          relationship would start this way? Low, very low.</p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 III</h3>
+        <p>When we started dating, I felt relieved and happy that I could finally love someone effortlessly and pretty
+          much all the time, you didn't mind my clinginess, which is.. new? I never had a chance to show someone how
+          much I love them, usually, they just ignore it or take it for granted. Dating you is like starting a new
+          chapter, a new chance at life.</p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 IV</h3>
+        <p>Oh, the time when I was at the mental hospital, was terrible, all I wanted to do was cry. It felt like they
+          gave me a lobotomy, I couldn't sleep, talk or eat. All I was thinking about was getting out and spending time
+          with you. I am lucky they let me out sooner than it was supposed to be. Sneaking out to sleep at your place
+          and do things behind my family's back was risky, but so thrilling. I love it, but I love it more that we live
+          together now.</p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 V</h3>
+        <p>So.. now we live together. It's fantastic, but it's just a bit stressful since we argue a lot, but that's
+          what couples do. Communicate and communicate till it's fixed, right? Sometimes I miss my family, but I enjoy
+          your company way more than at home. I mean what should I miss? The constant abuse? The screaming and yelling?
+          Repetitive emotional neglect? I mean, after all, it's still my family, isn't it? I like my family and you're
+          also my family, I hope we can marry each other one day and enjoy our lives to the fullest. I love you so much.
+        </p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 VI</h3>
+        <p>Now we are on a break, the week was tough. But luckily we made it, is the arguing phase over? I can't tell yet, who knows what will we have in the future, but right now I want to focus on the presence. I can't look at the future without fixing my problems right now, right? I get a little sad when I think about what happened or what you said, but it will eventually go away. We just have to work together!</p>
+        <h3>𝔠𝔥𝔞𝔭𝔱𝔢𝔯 VII</h3>
+        <p>I see, even though we talked it out you're still mean to me without a reason, or is your reason the same, the fact you can't forgive and forget? It's fine, I love y</p>
+      </div>
+    </div>
+    <div class="k heart1 kk"></div>
+    <div></div>
+    <div class="container4">
+    </div>
+    <div class="pata w3-container w3-center">
+      <p>
+        2025 | @lin.echi | For Lukas
+      </p>
+    </div>
+    <script>
+      function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+
+        const container = document.createElement('div');
+        container.classList.add('heart-container');
+
+        const size = Math.random() * 30 + 30;
+        const delay = Math.random() * 2;
+        const animationDuration = Math.random() * 5 + 7;
+
+        heart.style.width = `${size}px`;
+        heart.style.height = `${size}px`;
+
+        container.style.left = '-30px';
+        container.style.top = `${Math.random() * window.innerHeight}px`;
+
+        container.style.animationDuration = `${animationDuration}s`;
+        container.style.animationDelay = `${delay}s`;
+
+        container.appendChild(heart);
+        document.body.appendChild(container);
+
+        setTimeout(() => {
+          document.body.removeChild(container);
+        }, (animationDuration + delay) * 1000);
+      }
+
+      function generateHearts() {
+        createHeart();
+        setTimeout(generateHearts, Math.random() * 500 + 200);
+      }
+
+      generateHearts();
+    </script>
+
+
+  </body>
+
+</html>
